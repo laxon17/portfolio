@@ -10,7 +10,6 @@
     <meta name="author" content="Lazar Lalovic" />
     <meta name="description" content="Lazar Lalovic, Full stack web-developer!" />
     <meta name="keywords" content="Biography, skills, projects, work, applications, CSS, JavaScript, PHP, Laravel, web, full stack, developer"/>
-    <script src="assets/js/script.js"></script>  
     <title>Lazar Lalovic - Portfolio</title>
   </head>
 
@@ -22,8 +21,8 @@
         <!-- Navigation bar -->
       <nav>
         <ul>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#">Coding</a></li>
           <li><a href="#">Life</a></li>
         </ul>
@@ -35,9 +34,9 @@
           <!-- This is the part with basic info about me, name and what I do,,, -->
         <div class="developers-info">
           <h1>
-            I am Lazar Lalovic! <br/>
-            A full stack web developer
+            I am Lazar Lalovic!
           </h1>
+          <h1>Full stack web developer</h1>
         </div> 
 
           <!-- Just a simple text -->
@@ -52,43 +51,80 @@
       <!-- The main section of my portfolio page -->
     <main>
 
+        <!-- Wrapper of projects, each project has a front and a back side. In normal state, the front will be shown with a description of the project,
+        and hovering the front side will result in showing the project image... -->
+
+      <h2 id="projects">&lt;?php echo '$projects'; &gt;</h2>
+      <hr class="line"/>
+
       <section class="projects">
 
-        <article class="typewriter">
-          <h1 id="text">&lt;?php echo "My projects..."; &gt;</h1>
+        <article class="projects-row">
+
+          <div class="project">
+            <div class="front">
+              <h3>Robotrader</h3>
+              <p>
+                Platform that enables automated trades for high
+                frequency traders, allowing them to keep their crypto portfolio at one place.
+              </p>
+            </div>
+            <div class="back">
+              <img src="assets/img/robotrader.png" alt="Robotrader" />
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="front">
+              <h3>Mayordomo</h3>
+              <p>
+                Platform that enables automated trades for high
+                frequency traders, allowing them to keep their crypto portfolio at one place.
+              </p>
+            </div>
+            <div class="back">
+              <img src="assets/img/mayordomo.png" alt="Mayordomo" />
+            </div>
+          </div>
+
         </article>
 
-        <article class="slider">
-          <figure>
-            <div class="image">
-              <img src="assets/img/allegra.png" alt="Allegra software" />
-              <h2>Allegra software</h2>
-              <p>Used for that and that</p>
+        <article class="projects-row">
 
+          <div class="project">
+            <div class="front">
+              <h3>Opscalendar</h3>
+              <p>
+                Platform that enables automated trades for high
+                frequency traders, allowing them to keep their crypto portfolio at one place.
+              </p>
             </div>
-            <div class="image">
-              <img src="assets/img/robotrader.png" alt="Robotrader software" />
-              <h2>Robotrader software</h2>
-              <p>Used for that and that</p>
+            <div class="back">
+              <img src="assets/img/opscalendar.png" alt="Opscalendar" />
             </div>
-            <div class="image">
-              <img src="assets/img/aria.png" alt="Aria software" />
-              <h2>Aria software</h2>
-              <p>Used for that and that</p>
+          </div>
+
+          <div class="project">
+            <div class="front">
+              <h3>Allegra</h3>
+              <p>
+                Platform that enables automated trades for high
+                frequency traders, allowing them to keep their crypto portfolio at one place.
+              </p>
             </div>
-            <div class="image">
-              <img src="assets/img/mayordomo.png" alt="Mayordomo software" />
-              <h2>Mayordomo software</h2>
-              <p>Used for that and that</p>
+            <div class="back">
+              <img src="assets/img/allegra.png" alt="Allegra">
             </div>
-            <div class="image">
-              <img src="assets/img/allegra.png" alt="Allegra software" />
-              <h2>Allegra software</h2>
-              <p>Used for that and that</p>
-            </div>
-          </figure>
+          </div>
+
         </article>
+
       </section>
+
+      <!-- The skills section of my page, made out of one row with 4 child elements (the skill itself)... -->
+
+      <h2 id="skills">&lt;?php echo '$skills'; &gt;</h2>
+      <hr class="line"/>
 
       <section class="skills">
 

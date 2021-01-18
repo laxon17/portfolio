@@ -1,47 +1,78 @@
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 320px) {
+    header .intro .developers-info {
+        width: 100%;
+        text-align: center;
+    }
+
+    header .intro .developers-info:last-child {
+        margin-top: 600px;
+    }
+
+}
+@media screen and (max-width: 400px) {
+    header {
+        width: 100%;
+        padding: 0;
+    }
     header .intro {
         flex-direction: column;
+        justify-content: space-between;
         align-items: center;
+        margin-top: 100px;
         width: 100%;
-        padding: 20px;
+        height: 100%;
+        padding: 0;
+    }
+
+    header .intro .developers-info {
+        width: 200%;
+        text-align: center;
+    }
+
+    header .intro .developers-info:last-child {
+        margin-top: 600px;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        width: 100%;
+        padding: 0;
+    }
+    header .intro {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 100px;
+        width: 100%;
+        height: 100%;
+        padding: 0;
     }
 
     header .intro .developers-info {
         width: 100%;
         text-align: center;
-        margin-bottom: 50px;
     }
 
-
-    header .intro .developers-image {
-        width: 100%;
+    header .intro .developers-info:last-child {
+        margin-top: 520px;
     }
 
-    main .projects .slider figure img {
-        width: 10%;
-      }
-}
-
-@media screen and (max-width: 1024px) {
-    header .intro {
+    main .projects .projects-row:first-child {
+        display: flex;
         flex-direction: column;
-        justify-content: space-between;
+    }
+
+    main .projects .projects-row:last-child {
+        flex-direction: column-reverse;
+        
+    }
+
+    main .projects .projects-row .front {
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        width: 100%;
-        padding: 20px;
+        justify-content: space-around;
     }
-
-     .developers-info {
-        width: 90%;
-        text-align: center;
-        margin-bottom: 50px;
-    }
-
-    .developers-info:last-child {
-        margin-top: 50px;
-    }
-
-    main .projects .slider figure img {
-        width: 10%;
-      }
 }
