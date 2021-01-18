@@ -23,7 +23,7 @@
         <ul>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#">Coding</a></li>
+          <li><a href="#coding">Coding</a></li>
           <li><a href="#">Life</a></li>
         </ul>
       </nav>
@@ -36,7 +36,7 @@
           <h1>
             I am Lazar Lalovic!
           </h1>
-          <h1>Full stack web developer</h1>
+          <h1>Full stack web developer.</h1>
         </div> 
 
           <!-- Just a simple text -->
@@ -54,7 +54,7 @@
         <!-- Wrapper of projects, each project has a front and a back side. In normal state, the front will be shown with a description of the project,
         and hovering the front side will result in showing the project image... -->
 
-      <h2 id="projects">&lt;?php echo '$projects'; &gt;</h2>
+      <h2 id="projects">&lt;?php echo '$myprojects'; &gt;</h2>
       <hr class="line"/>
 
       <section class="projects">
@@ -78,8 +78,8 @@
             <div class="front">
               <h3>Mayordomo</h3>
               <p>
-                Platform that enables automated trades for high
-                frequency traders, allowing them to keep their crypto portfolio at one place.
+                Management system for smart lockers that performs order
+                processing, payments and user notifications.
               </p>
             </div>
             <div class="back">
@@ -95,8 +95,8 @@
             <div class="front">
               <h3>Opscalendar</h3>
               <p>
-                Platform that enables automated trades for high
-                frequency traders, allowing them to keep their crypto portfolio at one place.
+                A smart content calendar, primarly used by content marketing professionals, 
+                that streamlines content production, plans better topics, and measures results.
               </p>
             </div>
             <div class="back">
@@ -108,8 +108,7 @@
             <div class="front">
               <h3>Allegra</h3>
               <p>
-                Platform that enables automated trades for high
-                frequency traders, allowing them to keep their crypto portfolio at one place.
+                Point Of Sale software for retail.      
               </p>
             </div>
             <div class="back">
@@ -123,7 +122,7 @@
 
       <!-- The skills section of my page, made out of one row with 4 child elements (the skill itself)... -->
 
-      <h2 id="skills">&lt;?php echo '$skills'; &gt;</h2>
+      <h2 id="skills">&lt;?php echo '$myskills'; &gt;</h2>
       <hr class="line"/>
 
       <section class="skills">
@@ -148,7 +147,7 @@
           <div class="back">
             <h2>HTML 5</h2>
             <p>
-              HTML 5 is used for front end developing. <br/>
+              HTML is used for front end developing. <br/>
               HTML is the structure of the app/page...
             </p>
           </div>
@@ -177,6 +176,54 @@
               It is mostly used for front end developing...
             </p>
           </div>
+        </article>
+
+      </section>
+
+      <!-- Coding section, here is the description of my coding, code examples, 
+      that show how I code, and how the code is written legibly and meticulously...  -->
+
+      <h2 id="coding">&lt;?php echo '$coding'; &gt;</h2>
+      <hr class="line"/>
+
+      <section class="coding">
+
+        <article class="coding-row">
+
+          <div class="code">
+            <img src="assets/img/code-example.jpg" alt="Code example 1" />
+          </div>
+
+          <div class="code info">
+            <h3>Clear code</h3>
+            <hr class="line"/>
+            <p>
+              For me, clear written code is the most important thing in an app.
+              It shows your meticulousness, that you think about your colleagues and that they
+              don't need to search code lines for centuries.  
+            </p>
+          </div>
+
+        </article>
+
+        <article class="coding-row">
+
+          <div class="code info">
+            <h3>Keep in mind:</h3>
+            <hr class="line"/>
+            <ul>
+              <li>The code should be easy to be read,</li>
+              <li>Use identations and comments for each element,</li>
+              <li>Follow a specific method for commenting on the work,</li>
+              <li>Name the functions according to what they perform,</li>
+              <li>The language functions that are complex or the structure that is difficult to be comprehended should be avoided</li>
+            </ul>
+          </div>
+
+          <div class="code">
+            <img src="assets/img/vue-codo.png" alt="Code example 2" />
+          </div>
+          
         </article>
 
       </section>

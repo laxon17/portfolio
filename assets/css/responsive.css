@@ -1,4 +1,8 @@
 @media screen and (max-width: 320px) {
+    h2#projects,h2#skills,h2#coding  {
+        font-size: 16px;
+    }
+    
     header .intro .developers-info {
         width: 100%;
         text-align: center;
@@ -9,7 +13,10 @@
     }
 
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
+    h2#projects,h2#skills,h2#coding  {
+        font-size: 16px;
+    }
     header {
         width: 100%;
         padding: 0;
@@ -75,4 +82,32 @@
         align-items: center;
         justify-content: space-around;
     }
+
+    main .coding {
+        width: 80%;
+        margin: 50px auto;
+    }
+
+    main .coding .coding-row {
+        width: 100%;
+        
+    }
+
+    main .coding .coding-row .code {
+        width: 100%;
+    }
+
+    main .coding .coding-row {
+        flex-direction: column;
+    }
+
+    main .coding .coding-row:last-child {
+        flex-direction: column-reverse;
+    }
+
+    
+
+    
+
+   
 }
