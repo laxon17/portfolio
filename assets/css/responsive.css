@@ -1,8 +1,4 @@
 @media screen and (max-width: 320px) {
-    h2#projects,h2#skills,h2#coding  {
-        font-size: 16px;
-    }
-    
     header .intro .developers-info {
         width: 100%;
         text-align: center;
@@ -11,10 +7,10 @@
     header .intro .developers-info:last-child {
         margin-top: 600px;
     }
-
 }
+
 @media screen and (max-width: 420px) {
-    h2#projects,h2#skills,h2#coding  {
+    h2#projects,h2#skills,h2#coding,h2#life  {
         font-size: 16px;
     }
     header {
@@ -39,7 +35,6 @@
     header .intro .developers-info:last-child {
         margin-top: 600px;
     }
-
 }
 
 @media screen and (max-width: 1024px) {
@@ -72,8 +67,7 @@
     }
 
     main .projects .projects-row:last-child {
-        flex-direction: column-reverse;
-        
+        flex-direction: column-reverse;  
     }
 
     main .projects .projects-row .front {
@@ -105,9 +99,5 @@
         flex-direction: column-reverse;
     }
 
-    
-
-    
-
-   
 }
+

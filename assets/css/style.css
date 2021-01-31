@@ -6,6 +6,15 @@
   font-family: 'Poppins', sans-serif;
 }
 
+*a {
+  text-decoration: none;
+}
+
+:root {
+  --color1: #a00f0f;
+  --color2: #c0bfc0;
+}
+
 h2 { 
   text-align: center;
 }
@@ -14,9 +23,12 @@ h2#projects {
   margin-top: 40px;
 }
 
-
 h2#skills {
   margin-top: 40px;
+}
+
+h2#life {
+  margin-top: 70px;
 }
 
 .line {
@@ -26,11 +38,6 @@ h2#skills {
   background-color: var(--color1);
   border-color: var(--color1) ;
   outline: none;
-}
-
-:root {
-  --color1: #a00f0f;
-  --color2: #c0bfc0;
 }
 
 body {
@@ -45,19 +52,16 @@ a {
 }
 
 header {
-  background-image: url("../img/background.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url("../img/background.jpeg") no-repeat center;
   background-size: cover;
   width: 100%;
-  height: 900px;
+  height: 950px;
   box-shadow: inset 5px 5px 150px 60px #000;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  
 }
 
 header nav {
@@ -90,7 +94,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  color: grey;
+  color: rgb(110, 110, 110);
 }
 
 header .intro {
@@ -103,7 +107,7 @@ header .intro {
 }
 
 header .intro .developers-info h1 {
-  color: #c0bfbf; 
+  color: var(--color2); 
   font-size: 17px;
   overflow: hidden; 
   border-right: .2em solid var(--color1);
@@ -123,7 +127,6 @@ main .projects {
   flex-direction: column;
   position: relative;
   background-color: transparent;
-
 }
 
 main .projects .projects-row {
@@ -159,7 +162,7 @@ main .projects .projects-row .project .back img {
 
 main .projects .projects-row:first-child .project:first-child .front,
 main .projects .projects-row:last-child .project:last-child .front {
-  background-color: #c0bfbf;
+  background-color: var(--color2);
   position: absolute;
   padding: 40px ;  
   transition: 500ms;
@@ -180,7 +183,7 @@ main .projects .projects-row:last-child .project:last-child .front p {
 
 main .projects .projects-row:last-child .project:first-child .front,
 main .projects .projects-row:first-child .project:last-child .front {
-  background-color: #444444;
+  background-color: #444;
   position: absolute;
   padding: 40px;  
   transition: 500ms;
@@ -191,6 +194,7 @@ main .projects .projects-row:first-child .project:last-child .front {
 main .projects .projects-row:last-child .project:first-child .front:hover,
 main .projects .projects-row:first-child .project:last-child .front:hover {
   background-color: #8f8f8f63;
+  
 } 
 
 main .projects .projects-row .front {
@@ -209,7 +213,7 @@ main .skills {
   align-items: center;
   justify-content: space-around;
   perspective: 3000px;
-  background-color: rgba(0, 0, 0, 0.438);
+  background-color: rgba(0, 0, 0, 0.616);
 }
 
 main .skills .card {
@@ -218,7 +222,6 @@ main .skills .card {
   position: relative;
   transform-style: preserve-3d;
   transition: all 1s;
-
 }
 
 main .skills .card:hover {
@@ -243,14 +246,14 @@ main .skills .card .front img {
 }
 
 main .skills .card:nth-child(2) .front img {
-  width: 90%;
-  height: 90%;
-  
+  width: 80%;
+  height: 80%;
+  margin-top: 40px;
 }
 
 main .skills .card:nth-child(4) .front img {
-  width: 80%;
-  height: 80%;
+  width: 85%;
+  height: 85%;
   
 }
 
@@ -265,7 +268,7 @@ main .skills .card .back {
   transform: rotateY(180deg);
 }
 
-main .skills .card .back h2,p {
+main .skills .card .back h3,p {
   color: rgb(172, 166, 166);
 }
 
@@ -294,7 +297,7 @@ main .coding .coding-row .code.info {
   align-items: center;
   display: flex;
   flex-direction: column;
-  background-color: #c0bfbf;
+  background-color: var(--color2);
   font-size: 1.6vh;
   padding: 50px;
   overflow: hidden;
@@ -313,13 +316,217 @@ main .coding .coding-row .code.info p {
   color: rgb(43, 43, 43);
 }
 
-
-
 main .coding .coding-row .code img {
   width: 100%;
   height: 100%;
 }
 
+  /* Life & Bio section */
+
+main .life {
+  margin: 50px auto;
+  margin-bottom: 100px;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main .life .container.info {
+  margin-bottom: 50px;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  width: 70%; 
+  padding: 40px;
+  background: var(--color2);
+  box-shadow: 5px 5px 100px 5px #000;
+}
+
+main .life .container.info p {
+  color: rgb(43, 43, 43);
+  font-size: 1.6vh;
+}
+
+main .life .container.picture {
+  margin-bottom: 50px;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+main .life .container.picture img {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(70%);
+  border-radius: 50%;
+}
+
+  /* Footer */
+
+footer {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+footer .upper {
+  box-shadow: inset 0 0 40px 0 black;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  background-color: #631414 ;
+}
+
+footer .upper .container {
+  width: 25%;
+}
+
+footer .upper .container h4 {
+  color:  var(--color2);
+  text-decoration: underline;
+  margin-bottom: 10px;
+  font-size: 2vh;
+}
+
+footer .upper .container ul {
+  list-style-type: none;
+}
+
+footer .upper .container ul li,
+footer .upper .container ul li a {
+  color: var(--color2);
+  font-size: 1.6vh;
+}
+
+footer .upper .container ul li a i,
+footer .upper .container ul li i {
+  color:rgb(110, 110, 110);
+  font-size: 3.5vh;
+  margin: 0 10px 10px 0;
+  transition: 500ms;
+}
+
+footer .upper .container ul li a i:hover {
+  color: rgb(194, 194, 194);
+}
+
+footer .upper .container.contact {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer .upper .container.contact form {
+  border-radius: 20px;
+  width: 70%;
+  background-color: rgb(110, 110, 110);
+  box-shadow: inset 0 0 10px #000;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer .upper .container.contact form label {
+  font-size: 1.6vh;
+}
+
+footer .upper .container.contact form input {
+  width: 100%;
+  font-size: 1.6vh;
+  box-shadow: inset 0 0 10px #000;
+  background-color: rgb(224, 224, 224);
+  border-radius: 5px;
+  height: 40px;
+  padding: 5px;
+  margin: 5px 0 10px 0;
+  outline: none;
+  border: none;
+  transition: all 500ms;
+}
+
+footer .upper .container.contact form textarea {
+  width: 100%;
+  height: 100px;
+  margin: 5px 0 15px 0;
+  font-size: 1.6vh;
+  box-shadow: inset 0 0 10px #000;
+  background-color: rgb(224, 224, 224);
+  border-radius: 5px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  resize: none;
+  transition: all 500ms;
+}
+
+footer .upper .container.contact form button {
+  width: 40%;
+  box-shadow: 0 0 10px #000;
+  font-size: 1.6vh;
+  border-radius: 100px;
+  text-align: center;
+  padding: 15px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 500ms;
+  color: var(--color2);
+  background-color: var(--color1);
+}
+
+footer .upper .container.contact form button:hover {
+  color: var(--color1);
+  background-color: var(--color2);
+  box-shadow: 0 0 20px #000;
+}
+
+footer .lower {
+  box-shadow: inset 0 0 20px #000;
+  padding: 20px;
+  background-color: #310404;
+  text-align: center;
+  color: var(--color2);
+  font-size: 1.6vh;
+}
+
+  /* Styling of back to top button */
+button#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  z-index: 1111;
+  border-radius: 50%;
+  background: none;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 10px #000;
+}
+
+button#backToTop i {
+  font-size: 40px;
+  color: rgba(180, 3, 3, 0.699);
+  transition: 300ms;
+}
+
+button#backToTop i:hover, button#backToTop i:focus {
+  color: rgba(255, 95, 95, 0.699);
+}
   /* Animations */
 
   /* The typing effect */
@@ -344,6 +551,39 @@ main .coding .coding-row .code img {
   }
 }
 
+.showBtn {
+  animation-duration: 500ms;
+  animation-fill-mode: both;
+  animation-name: showBtn;
+}
+
+@keyframes showBtn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.hideBtn  {
+  animation-duration: 500ms;
+  animation-fill-mode: both;
+  animation-name: hideBtn;
+}
+
+@keyframes hideBtn {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
 
   /* External responsive.css couldn't override some elements, so I had to write it in here */
 @media screen and (max-width: 1024px) {
@@ -353,8 +593,7 @@ main .coding .coding-row .code img {
   }
 
   main .coding .coding-row {
-      width: 100%;
-      
+      width: 100%; 
   }
 
   main .coding .coding-row .code {
@@ -365,6 +604,65 @@ main .coding .coding-row .code img {
     padding: 20px 10px ;
   }
 
+  main .life .container.info {
+    width: 100%;
+  }
+
+  main .life .container.picture {
+    width: 250px;
+    height: 250px;
+  }
+
+  footer .upper {
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+  }
+
+  footer .upper .container,
+  footer .upper .container.contact {
+    width: 70%;
+    margin-bottom: 50px;
+  }
+
+  footer .upper .container.contact form {
+    width: 100%;
+  }
+
+ 
+  
+
+
 }
+
+@media screen and (max-width: 420px) {
+  main .life .container.picture {
+    width: 200px;
+    height: 200px;
+  }
+
+  main .life .container.info p {
+    padding: 10px 0;
+  } 
+}
+
+@media screen and (max-width: 320px) {
+  main .life .container.info {
+    padding: 15px;
+  }
+
+  footer .upper .container,
+  footer .upper .container.contact {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  footer .upper .container.contact form {
+    width: 100%;
+  }
+  
+}
+
+
 
 
