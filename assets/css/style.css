@@ -439,6 +439,12 @@ footer .upper .container.contact form label {
   font-size: 1.6vh;
 }
 
+footer .upper .container.contact form label::after {
+  content: attr(reqSymbol);
+  color: var(--color1);
+  font-size: 15px;
+}
+
 footer .upper .container.contact form input {
   width: 100%;
   font-size: 1.6vh;
@@ -628,11 +634,6 @@ button#backToTop i:hover, button#backToTop i:focus {
   footer .upper .container.contact form {
     width: 100%;
   }
-
- 
-  
-
-
 }
 
 @media screen and (max-width: 420px) {
