@@ -3,9 +3,9 @@
 
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="assets/css/responsive.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <link rel="icon" href="assets/img/icon.png" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&display=swap" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Lazar Lalovic" />
@@ -22,7 +22,9 @@
     <header>
 
         <!-- Navigation bar -->
-      <nav>
+      <nav class="navigation-bar">
+          
+        <div class="downArrow"></div>
         <ul>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
@@ -64,12 +66,11 @@
 
         <article class="projects-row">
 
-          <div class="project">
+          <div class="project" data-aos="fade-right">
             <div class="front">
               <h3>Robotrader</h3>
               <p>
-                Platform that enables automated trades for high
-                frequency traders, allowing them to keep their crypto portfolio at one place.
+                Automate trades and keep crypto portfolio at one place.
               </p>
             </div>
             <div class="back">
@@ -77,12 +78,11 @@
             </div>
           </div>
 
-          <div class="project">
+          <div class="project" data-aos="fade-left">
             <div class="front">
               <h3>Mayordomo</h3>
               <p>
-                Management system for smart lockers that performs order
-                processing, payments and user notifications.
+                Management system for smart lockers.
               </p>
             </div>
             <div class="back">
@@ -94,11 +94,11 @@
 
         <article class="projects-row">
 
-          <div class="project">
+          <div class="project" data-aos="fade-right">
             <div class="front">
               <h3>Opscalendar</h3>
               <p>
-                A smart content calendar, primarly used by content marketing professionals.
+                Smart content calendar for marketing professionals.
               </p>
             </div>
             <div class="back">
@@ -106,7 +106,7 @@
             </div>
           </div>
 
-          <div class="project">
+          <div class="project" data-aos="fade-left">
             <div class="front">
               <h3>Allegra</h3>
               <p>
@@ -128,7 +128,7 @@
       <h2 id="skills">&lt;/mySkills&gt;</h2>
       <hr class="line" />
 
-      <section class="skills">
+      <section class="skills" data-aos="zoom-in" data-aos-offset="50">
 
         <article class="card">    
           <div class="front">
@@ -163,7 +163,7 @@
           <div class="back">
             <h3>CSS 3</h3>
             <p>
-              CSS is used for styling HTML elements...
+              CSS is used for styling HTML elements.
             </p>
           </div>
         </article>
@@ -193,11 +193,11 @@
 
         <article class="coding-row">
 
-          <div class="code">
+          <div class="code" data-aos="fade-right">
             <img src="assets/img/code-example.jpg" alt="Code example 1" />
           </div>
 
-          <div class="code info">
+          <div class="code info" data-aos="fade-left">
             <h3>Clear code</h3>
             <hr class="line"/>
             <p>
@@ -214,7 +214,7 @@
 
         <article class="coding-row">
 
-          <div class="code info">
+          <div class="code info" data-aos="fade-right">
             <h3>Keep in mind</h3>
             <hr class="line"/>
             <ul>
@@ -227,7 +227,7 @@
             </ul>
           </div>
 
-          <div class="code">
+          <div class="code" data-aos="fade-left">
             <img src="assets/img/code-example2.png" alt="Code example 2" />
           </div>
           
@@ -240,13 +240,13 @@
 
       <section class="life">
 
-        <article class="container picture">
+        <article class="container picture" data-aos="fade-right">
           
           <img src="assets/img/developer.jpg" alt="Me, Developer" />
           
         </article>
         
-        <article class="container info">
+        <article class="container info" data-aos="fade-left">
           <h3>Lazar Lalovic</h3>
           <hr class="line biography" />
           <p>
@@ -269,13 +269,13 @@
     </main>
 
       <!-- The footer of my portfolio page -->
-    <footer>
+    <footer> 
 
       <div class="upper">
 
         <section class="container">
 
-          <h4>You might find these useful:</h4>
+          <h4>Info:</h4>
           <article class="contact-info">
             <ul>
               <li><i class="fas fa-phone-square-alt"></i> +381649238252</li>
@@ -329,7 +329,15 @@
 
       <!-- Disappearing/appearing button for scroll back... -->
     <button id="backToTop"><i class="fas fa-chevron-circle-up"></i></button>
-    <script type="text/javaScript" src="assets/js/scrollButton.js"></script>
+    <script type="text/javaScript" src="assets/js/script.js"></script>
+      <!-- On scroll animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+          offset: 100,
+          duration: 1000
+        })
+    </script>
   </body>
   
 </html>
