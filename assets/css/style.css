@@ -167,6 +167,10 @@ main .projects .projects-row .project .front {
       justify-content: space-around;
 }
 
+main .projects .projects-row .project .front h3 {
+  color: #c0bfc0;
+}
+
 main .projects .projects-row .project .front, main .projects .projects-row .project .back {
   width: 100%;
   height: 100%;
