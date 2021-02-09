@@ -27,14 +27,10 @@ function scrollBack () {
   window.scrollTo(0, 0);
 }
 
-// Navigation button hide/show
 
-const downArrow = document.getElementsByClassName('downArrow')[0];
-const ul = document.getElementsByTagName('ul')[0]; 
 
-downArrow = addEventListener ("click", () => {
-  ul.classList.toggle("open");
-});
+
+
 
 
 

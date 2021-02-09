@@ -12,7 +12,6 @@ $transparentGrey: #66666646;
 @mixin inputElement {
     width: 100%;
     font-size: 1.6vh;
-    box-shadow: inset 0 0 10px #000;
     background-color: $lightGrey;
     border-radius: 5px;
     padding: 5px;
@@ -24,7 +23,7 @@ $transparentGrey: #66666646;
 
     // *********** Box shadows ************ //
 
-$outerShadow: 5px 5px 100px 5px #000;
+$outerShadow: 0 5px 15px #000;
 
     // *********** Functions for positioning elements *********** // 
 
@@ -42,4 +41,34 @@ $outerShadow: 5px 5px 100px 5px #000;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+@mixin headerBackground() {
+    background: linear-gradient(-45deg,
+        #2b607a, 
+        #1a7db6, 
+        #03658b, 
+        #316181, 
+        #2ca1cf,
+        #004f63,
+        #20789b, 
+        #004f63
+    );
+	background-size: 400% 400%;
+	animation: gradient 20s ease-in-out infinite;
+}
+
+@mixin headingBackground() {
+    background: linear-gradient(-45deg,
+        #adadad,
+        #e0e0e0, 
+        #919191, 
+        #636363, 
+        #585858,
+        #aaaaaa,
+        #e0e0e0,
+        #adadad
+    );
+    background-size: 400% 400%;
+    animation: gradient 20s ease-in-out infinite;
 }
