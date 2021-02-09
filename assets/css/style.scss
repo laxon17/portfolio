@@ -30,7 +30,7 @@ header {
     width: 100%;
     height: 100vh;
     margin: 0 auto;
-    padding: 350px 0 50px 0  ;
+    padding:  350px 0 50px 0  ;
     .introduction {
         width: 100%;
         text-align: center;
@@ -42,9 +42,8 @@ header {
             -webkit-text-fill-color: transparent;
         }
         h2 {
-            font-size: 3.5vh;
+            font-size: 2.6vh;
             @include headingBackground();
-            font-size: 4vh;
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -614,6 +613,10 @@ button#backToTop {
     header {
         width: 100%;
         margin: 0 auto;
+        padding: 150px 0 50px 0;
+        a {
+            padding: 10px;
+        }
     }
     main {
         .skills {
@@ -647,6 +650,12 @@ button#backToTop {
 }
 
 @media screen and (max-width: 320px) {
+    header {
+        padding: 150px 0 50px 0;
+        a {
+            padding: 8px;
+        }
+    }
     main {
         .skills {
             .card {
