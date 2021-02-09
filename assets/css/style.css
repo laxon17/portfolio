@@ -219,7 +219,8 @@ main .projects .projects-row:last-child .project:last-child .front:hover p {
   display: none;
 }
 
-main .projects .projects-row:first-child .project:first-child .front p,
+main .projects .projects-row:first-child .project:first-child .front h3, main .projects .projects-row:first-child .project:first-child .front p,
+main .projects .projects-row:last-child .project:last-child .front h3,
 main .projects .projects-row:last-child .project:last-child .front p {
   color: #2b2b2b;
 }
