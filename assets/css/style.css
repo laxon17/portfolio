@@ -1000,7 +1000,7 @@ button#backToTop i:hover, button#backToTop i:focus {
   header {
     width: 100%;
     margin: 0 auto;
-    padding: 150px 0 50px 0;
+    padding: 300px 0 50px 0;
   }
   header a {
     padding: 10px;
@@ -1026,7 +1026,7 @@ button#backToTop i:hover, button#backToTop i:focus {
 
 @media screen and (max-width: 320px) {
   header {
-    padding: 150px 0 50px 0;
+    padding: 250px 0 50px 0;
   }
   header a {
     padding: 8px;
