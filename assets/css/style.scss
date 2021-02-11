@@ -21,6 +21,7 @@ h2 {
 body {
     background-color: #dadada;
     overflow-x: hidden; 
+    line-height: 1.7;
 }
 
     //**** Header of the page ****//
@@ -113,7 +114,8 @@ main {
         .projects-row:last-child .project:last-child .front {
             background-color: $lightGrey;
             position: absolute;
-            padding: 40px ;  
+            padding: 40px 10px;
+            text-align: center;  
             transition: 500ms;
             z-index: 1;
             font-size: 1.6vh;
@@ -131,7 +133,8 @@ main {
         .projects-row:first-child .project:last-child .front {
             background-color: $darkerBlue;
             position: absolute;
-            padding: 40px;  
+            padding: 40px 10px;
+            text-align: center;  
             transition: 500ms;
             z-index: 1;
             font-size: 1.6vh;
@@ -504,6 +507,8 @@ button#backToTop {
         
     }
 }
+
+                    // ========== Media querries ========== //
 
 @media screen and (max-width: 1024px) {
     body {

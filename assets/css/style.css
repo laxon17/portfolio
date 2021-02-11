@@ -23,6 +23,7 @@ h2 {
 body {
   background-color: #dadada;
   overflow-x: hidden;
+  line-height: 1.7;
 }
 
 header {
@@ -201,7 +202,8 @@ main .projects .projects-row:first-child .project:first-child .front,
 main .projects .projects-row:last-child .project:last-child .front {
   background-color: #c0bfc0;
   position: absolute;
-  padding: 40px;
+  padding: 40px 10px;
+  text-align: center;
   -webkit-transition: 500ms;
   transition: 500ms;
   z-index: 1;
@@ -229,7 +231,8 @@ main .projects .projects-row:last-child .project:first-child .front,
 main .projects .projects-row:first-child .project:last-child .front {
   background-color: #194c64;
   position: absolute;
-  padding: 40px;
+  padding: 40px 10px;
+  text-align: center;
   -webkit-transition: 500ms;
   transition: 500ms;
   z-index: 1;
